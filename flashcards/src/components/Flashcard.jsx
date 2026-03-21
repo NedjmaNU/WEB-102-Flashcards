@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./Flashcard.css";
 
 function Flashcard({term, image, answer, speech}) {
-    const [flipped, setFlipped] = useState(false); //setting the stage for card flipping
+    const [flipped, setFlipped] = useState(false); //setting up card flipping
 
     function handleFlip() {
         setFlipped(!flipped);
@@ -32,4 +32,4 @@ function Flashcard({term, image, answer, speech}) {
     )
 }
 
-export default Flashcard
+export default Flashcard;

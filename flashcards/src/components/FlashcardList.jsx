@@ -32,15 +32,21 @@ function FlashcardList () {
   //I believe this line shows only one card at a time :)
   const currentCard = flashcards[currentIndex];
 
+  //Makes the score, currently not working
+  const [score, setScore] = useState(0);
+
   return (
     <div className="flashcard-container">
       <Flashcard
         key={currentCard.id} //important to reset the flip
         term={currentCard.term} //the information on the front of the card
         image={currentCard.image} //will be placed on the front of the card
-        answer={currentCard.answer} //on thr back side of the crad
+        answer={currentCard.answer} //on the back side of the crad
         speech={currentCard.speech} //to help woth color coding cards
       />
+
+      /* flascard input would go here */
+
       <div className="buttons">
         <button onClick={prevCard}>←</button>
         <button onClick={nextCard}>→</button>

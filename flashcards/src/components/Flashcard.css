@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .flashcard {
@@ -30,7 +31,7 @@
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  border: 2px solid #333;
+  border: 2px solid #3e4546a3;
   box-sizing: border-box; /*prevents card from shifting up and down when flipping */
   display: flex;
   align-items: center;
@@ -53,6 +54,11 @@
 
 .flashcard-container {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; /* to keep items centered */
 }
 
 .buttons {
@@ -104,3 +110,23 @@ position: absolute;
   height: auto;
   border-radius: 8px;
 }
+
+.input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+/* Correct = green */
+.input.correct {
+  border-color: green;
+  background-color: #e6ffe6;
+}
+
+/* Wrong = red */
+.input.wrong {
+  border-color: red;
+  background-color: #ffe6e6;
+}
+

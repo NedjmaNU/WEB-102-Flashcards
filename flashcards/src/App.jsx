@@ -2,6 +2,7 @@ import React from "react";
 import './App.css';
 import FlashcardList from "./components/FlashcardList.jsx";
 
+
 function App() {
   return (
     <div>
@@ -9,6 +10,7 @@ function App() {
       <h2>Learn Farsi words and phrases!</h2>
       <h3>Red = Noun, Blue = Verb, Purple = Phrases, Green = Slang</h3>
       <h3>Number of cards: 10</h3>
+      <p></p>
       <br></br>
       <div className="App">
         <FlashcardList />
@@ -17,4 +19,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
