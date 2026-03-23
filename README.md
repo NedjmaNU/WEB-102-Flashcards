@@ -47,7 +47,7 @@ Here's a walkthrough of implemented required features:
 
 https://www.loom.com/share/e8f111a31c2c4cafb3213cf38307b1e1
 https://imgur.com/a/ZzqPIxb
-<img src='[https://imgur.com/a/ZzqPIxb](https://i.imgur.com/wXdfo12.mp4)' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/ZzqPIxb.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with Loom and Imgur
