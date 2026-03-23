@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./Flashcard.css";
 
-function Flashcard({term, image, answer, speech}) {
+function Flashcard({term, image, answer, speech, alt}) {
     const [flipped, setFlipped] = useState(false); //setting up card flipping
 
     function handleFlip() {
@@ -27,6 +27,7 @@ function Flashcard({term, image, answer, speech}) {
                 </div>
                 <div className="back">{answer}</div>
                 <span className="hidden">{speech}</span> {/*hidden class to prevent part of speech from showing on the flashcard */}
+                <span className="hidden">{alt}</span> {/*this is for alternative answers for input, also hidden*/}
             </div>
         </div>
     )
